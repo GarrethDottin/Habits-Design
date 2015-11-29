@@ -1,0 +1,16 @@
+<div class="tag-box">
+	<div class="cover">
+		<div class="tag-name">
+			Tag: {{tag.name}}
+		</div>
+		<div class="post-count">
+			<i class="fa fa-pencil-square-o fa-fw"></i>
+			{{plural pagination.total empty='0 Post' singular='% Post' plural='% Posts'}}
+		</div>
+	</div>
+	{{#if tag.description}}
+	<div class="tag-description">
+        {{tag.description}}
+	</div>
+	{{/if}}
+</div>

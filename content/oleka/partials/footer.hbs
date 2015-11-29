@@ -1,0 +1,31 @@
+<!-- start footer -->
+<footer class="main-footer clearfix">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 col-sm-push-6">
+                {{> social-links}}
+            </div>
+            <div class="col-sm-6 col-sm-pull-6">
+                <div class="copyright">
+                    &copy; {{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a>. All right Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<a href="#" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+<!-- end footer -->
+{{ghost_foot}}
+<script type="text/javascript">
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="{{asset "js/bootstrap.min.js"}}"></script>
+<script src="{{asset "js/plugins.js"}}"></script>
+<script src="{{asset "js/main.js"}}"></script>
