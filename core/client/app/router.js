@@ -28,6 +28,7 @@ Router.map(function () {
     this.route('signup', {path: '/signup/:token'});
     this.route('reset', {path: '/reset/:token'});
     this.route('about', {path: '/about'});
+    this.route('fpsk', {path:'/fpsk'});
 
     this.route('posts', {path: '/'}, function () {
         this.route('post', {path: ':post_id'});

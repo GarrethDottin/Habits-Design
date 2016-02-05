@@ -18,6 +18,14 @@ body > .ember-view {
     height: 100%;
 }
 
+.modal { 
+    display: inline;
+    text-align: center;
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 10%;
+}
+
 /* Content viewport, contains everything else */
 .gh-viewport {
     flex-grow: 1;
