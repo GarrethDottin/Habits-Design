@@ -30,7 +30,6 @@
     <meta name="msapplication-square70x70logo" content="{{asset "img/small.png" ghost="true"}}" />
     <meta name="msapplication-square150x150logo" content="{{asset "img/medium.png" ghost="true"}}" />
     <meta name="msapplication-square310x310logo" content="{{asset "img/large.png" ghost="true"}}" />
-
     {{#each configuration}}
         <meta name="env-{{this.key}}" content="{{this.value}}" />
     {{/each}}
@@ -41,7 +40,6 @@
 
     <link rel="stylesheet" href="{{asset "vendor.css" ghost="true" minifyInProduction="true"}}" />
     <link rel="stylesheet" href="{{asset "ghost.css" ghost="true" minifyInProduction="true"}}" />
-
     {{content-for 'head-footer'}}
 </head>
 <body>
