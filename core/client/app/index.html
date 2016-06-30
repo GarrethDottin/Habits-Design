@@ -15,10 +15,10 @@
     <meta name="pinterest" content="nopin" />
 
     <meta http-equiv="cleartype" content="on" />
+    <meta name="description" content="HD is about the intersection of culture and data. Figuring out how to separate the signal from the noise.">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="apple-mobile-web-app-title" content="Ghost" />
-
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}" />
     <link rel="apple-touch-icon-precomposed" href="{{asset "img/touch-icon-iphone.png" ghost="true"}}" />
     <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{asset "img/touch-icon-ipad.png" ghost="true"}}" />
@@ -40,7 +40,11 @@
 
     <link rel="stylesheet" href="{{asset "vendor.css" ghost="true" minifyInProduction="true"}}" />
     <link rel="stylesheet" href="{{asset "ghost.css" ghost="true" minifyInProduction="true"}}" />
+
     {{content-for 'head-footer'}}
+    <script src="https://use.typekit.net/mfs1fcm.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 </head>
 <body>
 {{content-for 'body'}}
@@ -48,6 +52,7 @@
 {{content-for 'body-footer'}}
 
 {{! Dem scripts }}
+
 <script src="{{asset "vendor.js" ghost="true" minifyInProduction="true"}}"></script>
 <script src="{{asset "ghost.js" ghost="true" minifyInProduction="true"}}"></script>
 </body>
